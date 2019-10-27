@@ -4,7 +4,7 @@
 
 #include "util.hpp"
 
-const std::regex REGEX = std::regex("\\[([0-9]+(\\.[0-9]+|))+(,[0-9]+(\\.[0-9]+|))*\\]");
+const std::regex REGEX = std::regex("\\[(-?[0-9]+(\\.[0-9]+|))+(,-?[0-9]+(\\.[0-9]+|))*\\]");
 
 std::vector<double> parse(char *p_str) {
     std::string str(p_str);
