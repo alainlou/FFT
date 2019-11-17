@@ -1,12 +1,8 @@
 # FFT
-A barebones implementation of a Fast Fourier Transform.
+A barebones implementation of a Fast Fourier Transform, written in Rust.
 
-Build:
-```bash
-make fft
-```
-Execute
+To run:
 ``` bash
-./fft <array>:
+cargo run <filename>
 ```
-where array looks something like [1,1.2,1.5,...]
+where the file contains space-seperated data (see example.txt)
