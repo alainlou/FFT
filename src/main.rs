@@ -23,7 +23,7 @@ fn dft(signal: Vec<Complex<f64>>) -> Vec<Complex<f64>> {
             let i = iter1 as f64;
             let j = iter2 as f64;
             
-            fourier[iter1] += signal[iter2] * (i*j*(*TAU)*(*J)/n).exp();
+            fourier[iter1] += signal[iter2] * (-i*j*(*TAU)*(*J)/n).exp();
         }
     }
     return fourier;
