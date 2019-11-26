@@ -11,6 +11,10 @@ const TAU: f64 = 6.283185307179586476925286766559005768394338798750211641949;
 fn main() {
     // Open file
     let args: Vec<String> = env::args().collect();
+    if args.len() != 2 {
+        println!("Incorrect number of arguments");
+        return;
+    }
     let mut file = File::open(&args[1]).expect("file not found");
 
     // Read file
